@@ -1,5 +1,5 @@
-#ifndef ______
-#define ______
+#ifndef LISTE_H
+#define LISTE_H
 
 #include <stdbool.h>
 
@@ -14,4 +14,4 @@ bool     liste_contient(const Maillon *tete, int valeur);
 void     liste_afficher(const Maillon *tete);
 void     liste_liberer(Maillon *tete);
 
-#endif /* ______ */
+#endif /* LISTE_H */
