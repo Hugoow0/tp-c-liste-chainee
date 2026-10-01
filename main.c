@@ -20,3 +20,12 @@ int main(void)
     printf("compteur apres liberation : %d\n", liste_blocs_en_circulation());
     return 0;
 }
+
+/*
+pas de valgrind sur macOS, mais on peut utiliser leaks pour verifier qu'il n'y a pas de fuite memoire
+exo 7 via :
+```
+gcc -Wall -Wextra -std=c11 -g -o /tmp/demo main.c liste.c
+leaks --atExit -- /tmp/demo
+```
+*/
